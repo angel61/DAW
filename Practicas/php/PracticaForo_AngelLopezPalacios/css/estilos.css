@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.titulo{
+    width: 30em;
+    background-color: rgb(211, 86, 86);
+    border-radius: 1em;
+    color: white;
+    text-align: center;
+}
+.formulario{
+    padding: 2em 0;
+    width: 30em;
+    padding-left: 2em;
+    background-color: rgb(211, 86, 86);
+    border-radius: 1em;
+    color: white;
+}
+
+.formulario form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+.fila,.botones{
+    
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+}
+.fila span{
+    width: 5em;
+}
+input,textarea{
+    resize: none;
+    padding: .5em;
+    border-radius: .5em;
+    border: none;
+    outline: none;
+}
+
+.botones>input{
+    padding: .5em;
+    background-color: rgb(211, 86, 86);
+    border: white 1px solid;
+    color: white;
+    border-radius: .5em;
+    outline: none;
+}
+.botones>input:hover{
+    background-color: rgb(184, 74, 74);
+    color: rgb(214, 214, 214);
+    border: rgb(214, 214, 214) 1px solid;
+}
